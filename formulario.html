@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Nuevas caracteristicas de HTML5 </title>
+
+</head>
+
+<body>
+	<h1>Nuevas caracteristicas de HTML5</h1>
+
+	<p> Este es un ejemplo con fomrularios</p>
+
+	<form id="form-order">
+
+		<p>
+		<label for="name">Nombre</label>
+		<input type="text" name="name" id="name"
+		placeholder="Escriba Nombre"
+		autofocus
+		autocomplete
+		required>
+		</p>
+
+		<p>
+		<label for="passwd">Contraseña</label>
+		<input type="password" name="passwd" id="passwd"
+		placeholder="gh1234"
+		pattern="[a-z]{3}[0-9]{4} "
+		required>
+		</p>
+
+		<p>
+		<label for="phone">Telefono</label>
+		<input type="tel" name="phone" id="phone" placeholder="59452483">
+		</p>
+
+		<p>
+		<label for="email">Correo</label>
+		<input type="email" name="email" id="email" placeholder="ejemplo@mail.com">
+		</p>
+
+		<p>
+		<label for="delivery">Fecha de envio</label>
+		<input type="date" name="delivery" id="delivery" min="2016-01-01">
+		</p>
+
+		<p>
+		<label for="color">Color de Item</label>
+		<input type="color" name="color" id="color" value="">
+		</p>
+
+		<p>
+		<label for="buscar">Busqueda</label>
+		<input type="search" name="buscar" id="buscar">
+		</p>
+
+		<p>
+		<fieldset>
+			<legend>Selecciona una Prioridad</legend>
+				<p><label><input type="radio" name="priority" value="Alta" checked>Alta</label></p>
+				<p><label><input type="radio" name="priority" value="Media" ></label>Media</p>
+				<p><label><input type="radio" name="priority" value="Baja"></label>Baja</p>
+		</fieldset>	
+
+		</p>
+
+		<p>
+		<fieldset>
+			<legend>Seleccione tipo de envio</legend>
+				<p><label><input type="checkbox" name="tipodeenvio" value="urgente">Urgente</label></p>
+				<p><label><input type="checkbox" name="tipodeenvio" value="acuse">Acuse</label></p>
+				<p><label><input type="checkbox" name="tipodeenvio" value="reembolso">Reembolso</label></p>
+		</fieldset>
+
+		</p>
+		<input type="submit" name="Enviar">
+		
+	</form>
+
+
+</body>
+</html>
